@@ -1,0 +1,17 @@
+.container{
+    display: grid;
+    grid-template-columns: 4;
+    gap: 1rem;
+    margin: 2.5rem 2.5rem;
+}
+.menuCards{
+   display: flex;
+   flex-direction: column;
+   border: 1px solid #D6235C;
+   width: 400px;
+   height: 250px;
+}
+.image{
+    width: 100px;
+    height: auto;
+}
