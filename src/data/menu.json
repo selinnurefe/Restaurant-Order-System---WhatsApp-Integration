@@ -1,11 +1,11 @@
 [
     {
-      "id": 1,
-      "name": "Edamame Beans",
-      "description": "Edamame beans with sea salt and lemon",
-      "price": "$5.00",
-      "image": "https://i.pinimg.com/1200x/32/27/24/3227246777ae976a884047b02a1e8a75.jpg"
-    },
+        "id": 1,
+        "name": "Edamame Beans",
+        "description": "Edamame beans with sea salt and lemon",
+        "price": "$5.00",
+        "image": "https://i.pinimg.com/1200x/32/27/24/3227246777ae976a884047b02a1e8a75.jpg"
+        },
     {
         "id": 2,
         "name": "Broccoli",
@@ -37,7 +37,7 @@
     {
         "id": 6,
         "name": "Poteto Sarada",
-        "description": "apanese potato salad with cucumber, red onion, carrot, cress & crispy potato",
+        "description": "Japanese potato salad with cucumber, red onion, carrot, cress & crispy potato",
         "price": "$6.60",
         "image": "https://i.pinimg.com/736x/16/d5/f2/16d5f262f1ca25144be6d61bf40b4120.jpg"
     },
