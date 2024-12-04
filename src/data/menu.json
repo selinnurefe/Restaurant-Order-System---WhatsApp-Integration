@@ -3,143 +3,141 @@
         "id": 1,
         "name": "Edamame Beans",
         "description": "Edamame beans with sea salt and lemon",
-        "price": "$5.00",
+        "price": 5.00,
         "image": "https://i.pinimg.com/1200x/32/27/24/3227246777ae976a884047b02a1e8a75.jpg"
-        },
+    },
     {
         "id": 2,
         "name": "Broccoli",
         "description": "Grilled with supreme soy, served with spicy goma",
-        "price": "$5.20",
+        "price": 5.20,
         "image": "https://takeaway.sticksnsushi.com/media/kd0kbtvc/sideorders_grilled-broccoli_2024_1000x1000.png?width=256&height=256&mode=max"
     },
     {
         "id": 3,
         "name": "Karaage",
         "description": "Chicken with pickled red onion & wasabi Caesar",
-        "price": "$10.80",
+        "price": 10.80,
         "image": "https://i.pinimg.com/736x/72/02/9a/72029a586c67a3392185d3af24af9ac7.jpg"
     },
     {
         "id": 4,
         "name": "Bimi Tempura",
         "description": "Tempura tenderstem broccoli with daikon oroshi in shiitake-tentsuyu sauce",
-        "price": "$7.30",
+        "price": 7.30,
         "image": "https://i.pinimg.com/736x/ee/bb/d8/eebbd8663e4ca250f3f17f4eb94a6382.jpg"
     },
     {
         "id": 5,
         "name": "Hiramasa Kataifi",
         "description": "Hiramasa, kataifi, chives, shiso, truffle oil & ponzu",
-        "price": "$14.00",
+        "price": 14.00,
         "image": "https://i.pinimg.com/736x/3f/55/57/3f5557d13cfd49d767cb1f82eba69c70.jpg"
     },
     {
         "id": 6,
         "name": "Poteto Sarada",
         "description": "Japanese potato salad with cucumber, red onion, carrot, cress & crispy potato",
-        "price": "$6.60",
+        "price": 6.60,
         "image": "https://i.pinimg.com/736x/16/d5/f2/16d5f262f1ca25144be6d61bf40b4120.jpg"
     },
     {
         "id": 7,
         "name": "Japanese Rice",
         "description": "A bowl of Japanese rice",
-        "price": "$2.60",
+        "price": 2.60,
         "image": "https://i.pinimg.com/736x/79/73/27/797327703f639923c3a3a89ac58fb37d.jpg"
     },
     {
         "id": 8,
         "name": "Tuna Tartare",
         "description": "Tuna, avocado, sesame, miso, yuzu and spring onion with crispy flat bread",
-        "price": "$12.20",
+        "price": 12.20,
         "image": "https://takeaway.sticksnsushi.com/media/jenkcywk/sideorders_tuna_tartare_2024_1000x1000.png?width=256&height=256&mode=max"
     },
     {
         "id": 9,
         "name": "Kinoko Korokke",
         "description": "miso aïoli & truffle dust",
-        "price": "$12.00",
+        "price": 12.00,
         "image": "https://takeaway.sticksnsushi.com/media/k1ahji31/sideorders_kinoko_korokke_6_2024_1000x1000.png?width=256&height=256&mode=max"
     },
     {
         "id": 10,
         "name": "Cauliflower",
         "description": "Fried and served with black truffle goma",
-        "price": "$6.60",
+        "price": 6.60,
         "image": "https://i.pinimg.com/736x/71/f3/bb/71f3bbb0379b9737a158c114c5f4e8ba.jpg"
     },
     {
         "id": 11,
         "name": "Shake Sashimi",
         "description": "Salmon",
-        "price": "$8.60",
+        "price": 8.60,
         "image": "https://takeaway.sticksnsushi.com/media/i13jhfsh/sashimi_shake_2024_1000x1000.png?width=256&height=256&mode=max"
     },
     {
         "id": 12,
         "name": "Shake",
         "description": "Nigiri with salmon",
-        "price": "$5.20",
+        "price": 5.20,
         "image": "https://takeaway.sticksnsushi.com/media/un2mchug/nigiri_shake_1024x1100px.png?width=256&height=256&mode=max"
     },
     {
         "id": 13,
         "name": "Shake NY",
         "description": "Nigiri with salmon & garlic",
-        "price": "$5.20",
+        "price": 5.20,
         "image": "https://takeaway.sticksnsushi.com/media/hd5p0oq2/nigiri_shake_new_york_1024x1100px.png?width=256&height=256&mode=max"
     },
     {
         "id": 14,
         "name": "California",
         "description": "Shrimp, avocado, cucumber, masago, sesame & miso aïoli",
-        "price": "$10.80",
+        "price": 10.80,
         "image": "https://i.pinimg.com/736x/44/11/3e/44113e361208aaad4a17cc325e939574.jpg"
     },
     {
         "id": 15,
         "name": "Kappa Maki",
         "description": "Cucumber",
-        "price": "$5.20",
+        "price": 5.20,
         "image": "https://i.pinimg.com/736x/17/76/80/1776803ee24ab22e9c10c0f7734f0aae.jpg"
     },
     {
         "id": 16,
         "name": "Beautiful Mess",
         "description": "Salmon, avocado, snow peas, edamame, pickled red onion, sushi rice & poké sauce",
-        "price": "$14.50",
+        "price": 14.50,
         "image": "https://i.pinimg.com/736x/4a/3f/6c/4a3f6c2087a51a5368535481a5895488.jpg"
     },
     {
         "id": 17,
         "name": "Goma",
         "description": "Black sesame custard, sesame nougatine & sesame tuile",
-        "price": "$6.00",
+        "price": 6.00,
         "image": "https://takeaway.sticksnsushi.com/media/5k0jxypr/desserts_ta_goma_1024x1100px.png?width=256&height=256&mode=max"
     },
     {
         "id": 18,
         "name": "Coca Cola Zero",
         "description": "Coca Cola Zero",
-        "price": "$1.50",
+        "price": 1.50,
         "image": "https://lacucharaveggie.com/wp-content/uploads/2016/03/coca-cola-zero-lla33.jpg"
     },
     {
         "id": 19,
         "name": "Japanese Ramune",
         "description": "A Japanese child’s favourite. Fresh, fun and bubbly.",
-        "price": "$1.60",
+        "price": 1.60,
         "image": "https://takeaway.sticksnsushi.com/media/gv5pk413/ramune.png?width=256&height=256&mode=max"
     },
     {
         "id": 20,
         "name": "Kirin Ichiban",
         "description": "100% malt lager, aromatic and refreshing. ",
-        "price": "$5.50",
+        "price": 5.50,
         "image": "https://takeaway.sticksnsushi.com/media/jutckrsi/kirin_ichiban.png?width=256&height=256&mode=max"
     }
-
-    
 ]
   

@@ -46,6 +46,7 @@
     display: flex;
     margin-top: 1rem;
     justify-content: right;
+    gap: 0.2rem;
 }
 .button{
     background-color: #F7F7F7;

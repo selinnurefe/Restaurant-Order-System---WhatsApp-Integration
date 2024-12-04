@@ -4,7 +4,7 @@ import menuData from '../../data/Menu';
 
 
 
-function Menu() {
+function Menu({handleAddToOrder, handleRemoveFromOrder}) {
 
   return (
     <div className={styles.container}>
@@ -20,10 +20,10 @@ function Menu() {
                             <h2 className={styles.name}>{item.name}</h2>
                             <p className={styles.description}>{item.description}</p>
                         </div>
-                        <p className={styles.price}>{item.price}</p>
+                        <p className={styles.price}>${item.price.toFixed(2)}</p>
                         <div className={styles.buttons}>
-                            <button className={styles.button}> + </button>                        
-
+                            <button className={styles.button} onClick={() => handleAddToOrder(item)}> + </button>                       
+                            <button className={styles.button} onClick={() => handleRemoveFromOrder(item)}> - </button>                        
                         </div>
                 </div>
             ))}
