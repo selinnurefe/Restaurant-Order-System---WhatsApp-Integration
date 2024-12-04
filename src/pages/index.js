@@ -5,11 +5,21 @@ import OrderCard from "@/components/OrderCard/OrderCard";
 
 
 export default function Home() {
-  const[orders,setOrders] = useState([]);
-  const[totalprice,setTotalprice] = useState(0); 
+  const[orders, setOrders] = useState([]);
+  const[totalprice, setTotalprice] = useState(0); 
+  const [count, setCount] = useState(0);
 
   const handleAddToOrder = (item) => {
-    setOrders((prevOrders) => [...prevOrders, item]);
+    setOrders((prevOrders) =>{
+      const currentOrder = prevOrders.find(order => order.id === item.id);
+      if(currentOrder){
+        return prevOrders.map(order => 
+          order.id ===item.id ? {...order, quantity: order.quantity + 1} : order
+        );
+      }else{
+        return [...prevOrders, {...item, quantity:1}];
+      }
+    });
     setTotalprice((prevPrice)=> prevPrice + item.price );
   };
   
@@ -24,12 +34,17 @@ export default function Home() {
     setOrders(updatedList);
   }
   
-
+  const handleRemoveBasket = () => {
+    setOrders([]);
+    setTotalprice(0.00);
+    setCount(0);
+  }
+ 
   return (
    <>
     <Header/>
     <Menu handleAddToOrder={handleAddToOrder} handleRemoveFromOrder={handleRemoveFromOrder}/>
-    <OrderCard orders={orders} totalprice={totalprice}/>
+    <OrderCard orders={orders} totalprice={totalprice} handleRemoveBasket={handleRemoveBasket}  quantity={count}/>
    </>
   );
 }
