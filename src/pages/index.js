@@ -51,12 +51,24 @@ export default function Home() {
     setTotalprice(0.00);
     setCount(0);
   }
+
+  const handleSendInfoMessage = () => {
+    const phoneNumber = "905555555555";
+    const message =   `I want to 
+    ${orders.map(order => `-${order.quantity} x ${order.name}($${order.price})`).join("\n")}
+    
+    Total Price: $${totalprice.toFixed(2)} 
+    `;
+
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, "_blank");
+  }
  
   return (
    <>
     <Header/>
     <Menu handleAddToOrder={handleAddToOrder} handleRemoveFromOrder={handleRemoveFromOrder}/>
-    <OrderCard orders={orders} totalprice={totalprice} handleRemoveBasket={handleRemoveBasket}  quantity={count}/>
+    <OrderCard orders={orders} totalprice={totalprice} handleRemoveBasket={handleRemoveBasket}  quantity={count} handleSendInfoMessage={handleSendInfoMessage}/>
    </>
   );
 }

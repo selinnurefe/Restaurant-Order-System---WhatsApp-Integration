@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from '../OrderCard/OrderCard.module.css';
 
-function OrderCard({orders,totalprice, handleRemoveBasket, quantity}) {
+function OrderCard({orders,totalprice, handleRemoveBasket, quantity, handleSendInfoMessage}) {
   return (
     <div className={styles.mainContainer}>
         <h2 className={styles.mainTitle}>Sipariş Detay</h2>
@@ -12,11 +12,11 @@ function OrderCard({orders,totalprice, handleRemoveBasket, quantity}) {
                 <p><i>${order.price.toFixed(2)}</i></p>
             </div>
             ))} 
-            <p> <strong>Toplam: </strong>${totalprice.toFixed(2)}</p>
+            <p> <strong>Total: </strong>${totalprice.toFixed(2)}</p>
         </div>
         <div className={styles.buttonContainer}>
-            <button className={styles.button} onClick={handleRemoveBasket}>Sepeti Boşalt</button>
-            <button className={styles.button}>Siparişi Onayla</button>
+            <button className={styles.button} onClick={handleRemoveBasket}>Empty Basket</button>
+            <button className={styles.button} onClick={handleSendInfoMessage}>Confirm Order</button>
         </div>
     </div>
   )
