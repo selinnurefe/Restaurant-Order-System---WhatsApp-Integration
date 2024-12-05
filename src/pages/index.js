@@ -9,12 +9,13 @@ export default function Home() {
   const[totalprice, setTotalprice] = useState(0); 
   const [count, setCount] = useState(0);
 
+
   const handleAddToOrder = (item) => {
     setOrders((prevOrders) =>{
       const currentOrder = prevOrders.find(order => order.id === item.id);
       if(currentOrder){
         return prevOrders.map(order => 
-          order.id ===item.id ? {...order, quantity: order.quantity + 1} : order
+          order.id === item.id ? {...order, quantity: order.quantity + 1} : order
         );
       }else{
         return [...prevOrders, {...item, quantity:1}];
@@ -22,16 +23,27 @@ export default function Home() {
     });
     setTotalprice((prevPrice)=> prevPrice + item.price );
   };
+
   
   const handleRemoveFromOrder = (item) => {
-    const updatedList = orders.filter((order) => order.id !== item.id);
-    
+    setOrders((prevOrders) => {
+      const currentOrder = prevOrders.find(order => order.id === item.id);
 
-    if (updatedList.length !== orders.length){
-      setTotalprice((prevPrice) => prevPrice -item.price);
-    }
+      if(currentOrder){
+        if(currentOrder.quantity > 1){
+          return prevOrders.map(order => 
+            order.id === item.id ? {...order,quantity: order.quantity -1} : order);
+        }else{
+          return prevOrders.filter(order => order.id !== item.id);
+        }
+      }
+      return prevOrders;
+    });
 
-    setOrders(updatedList);
+    setTotalprice((prevPrice) => {
+      const currentOrder = orders.find(order => order.id === item.id);
+      return currentOrder ? prevPrice - item.price : prevPrice;
+    })
   }
   
   const handleRemoveBasket = () => {
