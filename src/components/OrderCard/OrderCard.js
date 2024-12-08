@@ -8,7 +8,7 @@ function OrderCard({orders,totalprice, handleRemoveBasket, quantity, handleSendI
         <div className={styles.container}>
             {orders.map((order,index) => (
             <div key={index} className={styles.detailContainer}>
-                <p> {order.quantity} adet {order.name}...</p>
+                <p> {order.quantity} x {order.name}...</p>
                 <p><i>${order.price.toFixed(2)}</i></p>
             </div>
             ))} 
