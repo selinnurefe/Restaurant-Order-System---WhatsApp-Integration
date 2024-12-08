@@ -4,7 +4,7 @@ import styles from '../OrderCard/OrderCard.module.css';
 function OrderCard({orders,totalprice, handleRemoveBasket, quantity, handleSendInfoMessage}) {
   return (
     <div className={styles.mainContainer}>
-        <h2 className={styles.mainTitle}>Sipariş Detay</h2>
+        <h2 className={styles.mainTitle}>Order Detail</h2>
         <div className={styles.container}>
             {orders.map((order,index) => (
             <div key={index} className={styles.detailContainer}>
