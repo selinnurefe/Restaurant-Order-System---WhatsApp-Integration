@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Menu.module.css';
-import menuData from '../../data/Menu';
+import menuData from '../../data/menu.json';
 
 
 
