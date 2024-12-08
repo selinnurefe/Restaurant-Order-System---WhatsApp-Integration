@@ -2,8 +2,6 @@ import { useState } from "react";
 import Header from "@/components/Header/Header";
 import Menu from "@/components/Menu/Menu";
 import OrderCard from "@/components/OrderCard/OrderCard";
-import ReactDOM from "react-dom/client";
-
 
 
 export default function Home() {
@@ -76,6 +74,3 @@ export default function Home() {
 }
 
 
-
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<Home/>);
